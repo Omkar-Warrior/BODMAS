@@ -1,0 +1,94 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.box {
+    margin-top: 100px;
+}
+
+
+@keyframes h1 {
+    0% {
+        background: linear-gradient(to right, red, blue);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    100% {
+        background: linear-gradient(to right, orange, rgb(246, 3, 43));
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+h1{
+    font-size: 80px;
+    animation: h1 10s infinite;
+}
+
+
+@keyframes buttona{
+    0%{background-color: rgb(2, 176, 245);}
+   
+    50%{background-color: purple;}
+    
+    100%{background-color: orange;}
+
+}
+
+button {
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 40px;
+
+    animation: buttona 5s infinite;
+}
+
+button:hover {
+    background-color: orange;
+    box-shadow: 0px 0px 30px orangered;
+    transform: translateY(-20px);
+}
+
+#question {
+    font-size: 60px;
+    font-weight: bolder;
+    
+    background: linear-gradient(-45deg,rgb(247, 2, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+#score{
+    margin-top: 20px;
+    margin-left: 650px;
+    font-size: 40px;
+    font-weight: bolder;
+    border: 2px solid rgb(139, 234, 7);
+    width: 200px;
+    color: rgb(8, 8, 8);
+    background-color: rgb(101, 246, 4);
+}
+
+#result {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+
+    border-radius: 8px;
+}
+
